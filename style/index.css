@@ -1,0 +1,162 @@
+/*样式重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,span,i,a,p,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,table,header,footer,nav,aside{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  border:none;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+  font-size:14px;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}
+ul,li,ol{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 300;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+input{
+  -webkit-user-select:text !important;
+}
+table{ 
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.home {
+  width: 100%;
+  background: url(../images/home.png) no-repeat center;
+  background-size:cover;
+}
+.home_nav {
+  width: 1000px;
+  padding: 16px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainLogo {
+  width: 120px;
+  height: 30px;
+  background: url(../images/company.png) no-repeat;
+}
+.nav_skip {
+  min-width: 58px;
+  height: 30px;
+  padding: 0 15px;
+  border: 1px solid #44D2FF;
+  border-radius: 2px;
+  line-height: 27px;
+  color: #5FC9EC;
+  font-size: 15px;
+  text-align: center;
+}
+.nav_skip:hover {
+  border-color: #A2E8FF;
+  text-decoration: none;
+  color: #A2E8FF;
+}
+
+.indexHead{
+  padding-top: 85px;
+  text-align: center;
+}
+.indexHead_text {
+  /*width: 60%;*/
+  padding: 0 70px;
+  margin: 0 auto;
+  color: #44D2FF;
+  font-family: "Heiti SC","Microsoft YaHei",BlinkMacSystemFont,Helvetica,"lucida Grande","PingFang SC";
+  font-size: 48px;
+  text-align: center;
+}
+.indexDeviceImg {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  padding-bottom: 23.5%;
+  background: url(../images/bottom.webp) center bottom no-repeat;
+  background-size: 90%;
+}
+
+#main {
+  width: 100%;
+  background-color: #fff;
+}
+.experience_list {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience_moudle {
+  width: 25%;
+  word-break: break-all;
+}
+
+.index_head {
+  position: relative;
+  width: 100%;
+  padding-top: 105px;
+  overflow: hidden;
+  background-color: #041022;
+}
+@media (max-width: 1200px) {
+  .home_nav {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .indexDeviceImg {
+    width: auto;
+    margin: 110px auto 0;
+  }
+}
+@media (max-width: 770px) {
+  .home_nav {
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 25px 0;
+    justify-content: center;
+  }
+  .mainLogo {
+    width: 82px;
+    height: 91px;
+    background-image: url(../images/spirit.png);
+    background-position: -390px -100px; 
+  }
+  .nav_skip {
+    display: none;
+  }
+  .indexHead {
+    padding-top: 40px;
+  }
+  .indexHead_text {
+    font-size: 26px;
+    /*margin-bottom: 32px;*/
+    padding-top: 0;
+  }
+  .indexDeviceImg {
+    background: url(../images/phone.png) center bottom no-repeat;
+    background-size: 100%;
+    margin: 42px auto 0;
+    width: 279px;
+    height: 257px;
+  }
+}

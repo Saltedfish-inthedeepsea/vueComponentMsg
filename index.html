@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="stylesheet" href="style/add.css">
+</head>
+<body>
+	<div id="app">
+		<div class="home" ref="home">
+			<div class="home_nav">
+				<span class="mainLogo"></span>
+				<a class="nav_skip" href="detail.html" target="_blank">API文档</a>
+			</div>
+			<!-- 下拉后显示nav -->
+			<!-- <div class="home_nav_dispaly" style="display: none;">
+				<div class="nav_title_dispaly">
+					<img src="./images/company.webp" alt="税大师">
+				</div>
+				<a class="nav_skip_dispaly" href="detail.html" target="_blank" @click="alert(111)">API文档</a>
+			</div> -->
+			<div class="indexHead frame_container_Mobile">
+				<div class="indexHead_text">武汉税大师财税有限公司</div>
+				<a style='margin-top: 50px' class="index_head_info_pCDownloadBtn" href="detail.html" role="button" ontouchstart="">登 录</a>
+			</div>
+			<div class="indexDeviceImg"></div>
+		</div>
+
+		<main class="index_cnt index_cnt_web" id="js_index_main"> 
+		   	<div class="index_cnt_inside"> 
+		    	<div class="index_section index_section_Main"> 
+		     		<div class="index_section_cntWrap"> 
+		      			<div class="index_section_cnt"> 
+		       				<div class="index_cnt_item"> 
+		        				<div class="index_cnt_item_imgWrap"> 
+		         					<div class="index_cnt_item_img index_cnt_item_img_Featured1"></div> 
+		        				</div> 
+		        				<div class="index_cnt_item_title">与微信一致的沟通体验</div> 
+		        				<ul class="index_cnt_item_list"> 
+		         					<li class="index_cnt_item_list_item">
+		         						<span class="index_cnt_item_list_item_text">简单易用，零成本上手，用熟悉的方式工作。</span>
+		         					</li> 
+		        				</ul> 
+		       				</div> 
+			       			<div class="index_cnt_item"> 
+			        			<div class="index_cnt_item_imgWrap"> 
+			         				<div class="index_cnt_item_img index_cnt_item_img_Featured2"></div> 
+			        			</div> 
+			        			<div class="index_cnt_item_title">连接微信</div> 
+			        			<ul class="index_cnt_item_list"> 
+			         				<li class="index_cnt_item_list_item">
+			         					<span class="index_cnt_item_list_item_text"> 用税大师直接添加微信用户为好友，更好地沟通工作。同时可运行小程序，使用微信支付能力。</span>
+			         				</li> 
+			         				<li class="index_cnt_item_list_item index_cnt_item_list_item_Link">
+			         					<a class="index_cnt_item_list_item_text index_link" href="javascript:;" ontouchstart="" target="_blank">了解更多
+			         						<span class="ww_officialImg ww_officialImg_ArrowRight"></span>
+			         						<span class="ww_officialImg ww_officialImg_ArrowRightHover"></span>
+			         					</a>
+			         				</li> 
+			        			</ul> 
+			       			</div>
+		       				<div class="index_cnt_item"> 
+		        				<div class="index_cnt_item_imgWrap"> 
+		         					<div class="index_cnt_item_img index_cnt_item_img_Featured3"></div> 
+		        				</div> 
+		        				<div class="index_cnt_item_title">丰富的办公应用</div> 
+		        				<ul class="index_cnt_item_list"> 
+		         					<li class="index_cnt_item_list_item">
+		         						<span class="index_cnt_item_list_item_text">预设打卡、审批等OA应用，提供丰富的第三方应用供选择，还支持API接入自有应用。</span>
+		         					</li> 
+		         					<li class="index_cnt_item_list_item index_cnt_item_list_item_Link"><a class="index_cnt_item_list_item_text index_link" href="https://work.weixin.qq.com/api/doc" ontouchstart="" target="_blank">查看API文档 <span class="ww_officialImg ww_officialImg_ArrowRight"></span><span class="ww_officialImg ww_officialImg_ArrowRightHover"></span></a></li> 
+		        				</ul> 
+		       				</div> 
+		       				<div class="index_cnt_item"> 
+		        				<div class="index_cnt_item_imgWrap"> 
+		         					<div class="index_cnt_item_img index_cnt_item_img_Featured4"></div> 
+		        				</div> 
+		        				<div class="index_cnt_item_title">全面安全保障</div> 
+		        				<ul class="index_cnt_item_list"> 
+		         					<li class="index_cnt_item_list_item">
+		         						<span class="index_cnt_item_list_item_text">国际权威认证，银行级别加密水平，保障企业数据安全。</span>
+		         					</li> 
+		         					<li class="index_cnt_item_list_item index_cnt_item_list_item_Link"><a class="index_cnt_item_list_item_text index_link" href="https://work.weixin.qq.com/wework_admin/index/security" ontouchstart="" target="_blank">安全详情 <span class="ww_officialImg ww_officialImg_ArrowRight"></span><span class="ww_officialImg ww_officialImg_ArrowRightHover"></span></a></li> 
+		        				</ul> 
+		       				</div> 
+		      			</div> 
+		     		</div> 
+		    	</div> 
+		    	<div class="index_section index_section_SubFeature"> 
+		     		<div class="index_section_title">税大师产品功能</div> 
+		     		<div class="index_section_cntWrap"> 
+		      			<div class="index_section_cnt"> 
+		       				<div class="qui_clear"> 
+		        				<div class="index_cnt_item"> 
+		         					<div class="index_cnt_item_title"> 
+		          						<span class="ww_officialImg ww_officialImg_SubFeature1"></span>转发微信聊天记录 
+		         					</div> 
+		         					<ul class="index_cnt_item_list"> 
+		          						<li class="index_cnt_item_list_item">
+		          							<span class="index_cnt_item_list_item_text">微信中的聊天记录、订阅文章，都可一键快速转发到税大师。税大师也可转发到微信。</span>
+		          						</li> 
+		         					</ul> 
+		        				</div> 
+		        				<div class="index_cnt_item"> 
+		         					<div class="index_cnt_item_title"> 
+		          						<span class="ww_officialImg ww_officialImg_SubFeature2"></span>通讯录管理 
+		         					</div> 
+		         					<ul class="index_cnt_item_list"> 
+		          						<li class="index_cnt_item_list_item">
+		          							<span class="index_cnt_item_list_item_text">快速批量导入，统一管理；同事信息准确完善，方便查阅。</span>
+		          						</li> 
+		         					</ul> 
+		        				</div> 
+		        <div class="index_cnt_item"> 
+		         <div class="index_cnt_item_title"> 
+		          <span class="ww_officialImg ww_officialImg_SubFeature3"></span>视频会议 
+		         </div> 
+		         <ul class="index_cnt_item_list"> 
+		          <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">高清稳定的视频会议，支持文档演示和屏幕共享，支持用电话接入，可9人同时参与。</span> </li> 
+		         </ul> 
+		        </div> 
+		        <div class="index_cnt_item"> 
+		         <div class="index_cnt_item_title"> 
+		          <span class="ww_officialImg ww_officialImg_SubFeature4"></span>企业支付 
+		         </div> 
+		         <ul class="index_cnt_item_list"> 
+		          <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">提供完备的支付能力，企业可以在税大师内给员工发红包，给员工付款或向员工收款。</span> </li> 
+		         </ul> 
+		        </div> 
+		       </div> 
+
+
+		       <div class="js_feature_flod_container qui_clear" v-show="unfoldShow"> 
+		        <div class="qui_clear"> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature5"></span>公费电话 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">领取1000分钟公费电话时长，支持多人通话，方便与客户、同事电话沟通工作。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature6"></span>企业邮箱 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">获取专属域名的企业邮箱，实时收取邮件通知，及时查询邮件，快速响应。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature13"></span>文件盘 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">统一管理企业文件，方便员工随时访问。免费100G空间使用，可付费购买更多。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature7"></span>可管理的群聊 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">可设置仅群主可管理群聊，设置群内禁言，发布群公告。支持发起2000人群聊。</span> </li> 
+		          </ul> 
+		         </div> 
+		        </div> 
+		        <div class="qui_clear"> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature8"></span>丰富的配置 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">可个性化定义员工资料，设置通讯录查看权限和隐藏特殊部门或成员。还支持在手机启动页设置企业Logo、宣传图，打造企业文化。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature9"></span>打卡 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">在手机上轻松考勤，支持固定时间上下班、灵活排班、自由上下班和外出打卡。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature10"></span>汇报 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">员工通过日报、周报、月报汇报工作进展，管理者可在手机端方便的查看。</span> </li> 
+		          </ul> 
+		         </div> 
+		         <div class="index_cnt_item"> 
+		          <div class="index_cnt_item_title"> 
+		           <span class="ww_officialImg ww_officialImg_SubFeature11"></span>审批 
+		          </div> 
+		          <ul class="index_cnt_item_list"> 
+		           <li class="index_cnt_item_list_item"> <span class="index_cnt_item_list_item_text">支持添加自定义审批模板，可设置固定审批人和抄送人，可查看申请记录。</span> </li> 
+		          </ul> 
+		         </div> 
+		        </div> 
+		       </div> 
+		      </div> 
+		     </div> 
+		    	<div class="index_section_operate"> 
+			      	<a href="javascript:;" class="index_section_operate_more index_link" ontouchstart="">
+			      		<span :class="{index_section_operate_more_hide: unfoldShow}" @click="unfoldShow = true"> 展开 
+			      			<span class="ww_officialImg ww_officialImg_Plus"></span>
+			      			<span class="ww_officialImg ww_officialImg_PlusHover"></span>
+			      		</span>
+			      		<span :class="{index_section_operate_more_hide: !unfoldShow}" @click="unfoldShow = false"> 收起 
+			      			<span class="ww_officialImg ww_officialImg_Collapse"></span>
+			      			<span class="ww_officialImg ww_officialImg_CollapseHover"></span>
+			      		</span>
+			      	</a> 
+		     	</div> 
+		    </div>
+
+
+
+
+		    <div class="index_section index_section_Case"> 
+		     	<div class="index_section_title"> 典型案例 </div> 
+		     	<div class="index_section_caseNew"> 
+		      		<div class="index_section_caseNew_inner"> 
+		       			<div class="swiper-container index_section_caseNew_container swiper-container-horizontal" style="visibility: visible;"> 
+		        			<div class="swiper-wrapper index_section_caseNew_wrapper"> 
+		         				<a href="/wework_admin/index/caselist?id=zst" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="zst" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="17">
+		          					<div class="index_section_caseNew_cardImg">
+		           						<div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/zishengtang.png"></div>
+		          					</div>
+		          					<div class="case_card_content index_section_caseNew_cardText">
+		           						<span class="index_section_caseNew_cardText_name">资生堂</span>
+		           						<span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          					</div>
+		          				</a>
+		         				<a href="/wework_admin/index/caselist?id=zaw" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="zaw" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="18">
+		          					<div class="index_section_caseNew_cardImg">
+		           						<div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/zhenaiwang.png">
+		           						</div>
+		          					</div>
+		          					<div class="case_card_content index_section_caseNew_cardText">
+		           						<span class="index_section_caseNew_cardText_name">珍爱网</span>
+		           						<span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          					</div>
+		          				</a>
+		         <a href="/wework_admin/index/caselist?id=bbgsy" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="bbgsy" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="19">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/bubugao.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">步步高商业</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=tgyl" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="tgyl" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="0">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/kekoukele.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">太古可口可乐</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=xhs" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="xhs" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="1">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/xiaohongshu.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">小红书</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=yc" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="yc" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="2">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/yuchai.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">玉柴集团</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=mdl" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="mdl" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="3">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/maidelong.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">麦德龙</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=th" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="th" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="4">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:url(images/tianhong.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">天虹</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a>
+		         <!-- <a href="/wework_admin/index/caselist?id=zgty" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="zgty" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="5">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/zgty_pic@2x$033fff5b.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">中国铜业</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=sfl" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="sfl" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="6">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/sfl_pic@2x$998b9a9f.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">丝芙兰</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=bgy" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="bgy" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="7">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/bgy_pic@2x$a8fcbacb.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">百果园</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=yxt" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="yxt" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="8">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/yxt_pic@2x$362b2d42.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">一心堂</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=cddt" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-prev" data-id="cddt" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="9">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/cddt_pic@2x$fb871b48.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">成都地铁</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=hdjt" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-active" data-id="hdjt" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="10">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/hdjt_pic@2x$8f5ade3c.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">海大集团</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=qc" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-next" data-id="qc" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="11">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/qc_pic@2x$74ec742c.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">雀巢</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=caqc" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="caqc" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="12">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/caqc_pic@2x$1ba93283.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">长安汽车</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=zhjs" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="zhjs" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="13">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/zhjs_pic@2x$7d0c9fd6.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">中航健身</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=hdsfdx" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="hdsfdx" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="14">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/hdsfdx_pic@2x$fb38f522.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">华东师范大学</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=wkwy" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="wkwy" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="15">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/wkwy_pic@2x$bcfa5e56.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">万科物业</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=dbkd" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="dbkd" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="16">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/dbkd_pic@2x$3c552388.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">德邦快递</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=zst" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="zst" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="17">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/zst_pic@2x$1a2d524c.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">资生堂</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=zaw" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="zaw" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="18">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/zaw_pic@2x$1e90202e.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">珍爱网</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=bbgsy" target="_blank" class="swiper-slide index_section_caseNew_item" data-id="bbgsy" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="19">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/bbgsy_pic@2x$a8ed08ec.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">步步高商业</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a> 
+		         <a href="/wework_admin/index/caselist?id=tgyl" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="tgyl" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="0">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/tgyl_pic@2x$5e8c35a8.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">太古可口可乐</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a>
+		         <a href="/wework_admin/index/caselist?id=xhs" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="xhs" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="1">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/xhs_pic@2x$0e94e773.png"></div>
+		          </div>
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">小红书</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a>
+		         <a href="/wework_admin/index/caselist?id=yc" target="_blank" class="swiper-slide index_section_caseNew_item swiper-slide-duplicate" data-id="yc" style="width: 216px; margin-right: 45px;" data-swiper-slide-index="2">
+		          <div class="index_section_caseNew_cardImg">
+		           <div class="index_section_caseNew_cardImg_inner" style="background-image:
+				url(//rescdn.qqmail.com/node/wwmng/wwmng/style/images/independent/index/caselist/yc_pic@2x$a9a39e06.png"></div>
+		          </div> 
+		          <div class="case_card_content index_section_caseNew_cardText">
+		           <span class="index_section_caseNew_cardText_name">玉柴集团</span>
+		           <span class="index_section_caseNew_cardText_nav">查看案例<i class="ww_officialImg ww_officialImg_ArrowRight"></i></span>
+		          </div></a>  -->
+		        </div>
+		        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+		       </div>
+		      </div>
+		    	<div class="swiper-button index_section_caseNew_navBtn"> 
+		       		<a href="javascript:;" class="index_section_caseNew_navBtn_prev" tabindex="0" role="button" aria-label="Previous slide"><i></i></a> 
+		       		<a href="javascript:;" class="index_section_caseNew_navBtn_next" tabindex="0" role="button" aria-label="Next slide"><i></i></a> 
+		      	</div>
+		      	<div class="index_section_case_shop_more" style="margin-top: 30px">
+		       		<a href="/wework_admin/index/caselist" class="index_section_case_shop_more_link index_link" ontouchstart="">认识更多税大师用户 <span class="ww_officialImg ww_officialImg_ArrowRight"></span><span class="ww_officialImg ww_officialImg_ArrowRightHover"></span></a>
+		      	</div> 
+		     </div>
+		    </div>
+
+
+		    <div class="index_section index_download" id="indexDownload">
+		     	<div class="index_download_cnt"> 
+		      		<a class="index_download_item index_download_item_Window" href="/wework_admin/commdownload?platform=win&amp;from=wwindex" role="button">
+		       			<div class="index_download_item_iconWrap">
+		        			<span class="ww_officialImg ww_officialImg_DownloadWindows index_download_item_iconWrap_normalIcon"></span> 
+		        			<span class="ww_officialImg ww_officialImg_DownloadIcon index_download_item_iconWrap_hoverIcon"></span>
+		       			</div>
+		       			<div class="index_download_item_title">Windows桌面端</div>
+		       			<div class="index_download_item_desc">点击直接下载</div>
+		       		</a>‌ 
+		      		<a class="index_download_item index_download_item_Mac" href="/wework_admin/commdownload?platform=mac&amp;from=wwindex" role="button">
+		       			<div class="index_download_item_iconWrap">
+		        			<span class="ww_officialImg ww_officialImg_DownloadMac index_download_item_iconWrap_normalIcon"></span> 
+		        			<span class="ww_officialImg ww_officialImg_DownloadIcon index_download_item_iconWrap_hoverIcon"></span>
+		       			</div>
+		       			<div class="index_download_item_title">Mac桌面端</div>
+		       			<div class="index_download_item_desc">点击直接下载</div>
+		       		</a>‌ 
+		      		<a class="index_download_item" href="/wework_admin/commdownload?platform=ios&amp;from=wwindex" plat="ios" role="button">
+		       			<div class="index_download_item_iconWrap">
+		        			<span class="ww_officialImg ww_officialImg_DownloadiOS index_download_item_iconWrap_normalIcon"></span> 
+		        			<img class="index_download_item_downloadIcon index_download_item_iconWrap_hoverIcon" src="https://work.weixin.qq.com/wework_admin/genqrcode?action=commdownload&amp;platform=ios&amp;from=wwindex&amp;qr_size=4" />
+		       			</div>
+		       			<div class="index_download_item_title">iOS版</div>
+		       			<div class="index_download_item_desc">扫描二维码下载</div>
+		       		</a>‌ 
+		      		<a class="index_download_item" href="/wework_admin/commdownload?platform=android&amp;from=wwindex" plat="android" role="button">
+		       			<div class="index_download_item_iconWrap">
+		        			<span class="ww_officialImg ww_officialImg_DownloadAndroid index_download_item_iconWrap_normalIcon"></span> 
+		        			<img class="index_download_item_downloadIcon index_download_item_iconWrap_hoverIcon" src="https://work.weixin.qq.com/wework_admin/genqrcode?action=commdownload&amp;platform=android&amp;from=wwindex&amp;qr_size=4" />
+		       			</div>
+		       			<div class="index_download_item_title">Android版</div>
+		       			<div class="index_download_item_desc">扫描二维码下载</div>
+		       		</a>‌
+		     	</div>
+		    </div>
+
+
+		    <div class="index_section index_log" data-log="newLog201804">
+		     <div class="index_log_cnt "> 
+		      <div class="index_log_section index_log_section_Open">
+		       <a class="index_log_section_title" href="javascript:;"> 税大师 2.7.5 <time class="index_log_section_title_date">2019-3-11</time></a>
+		       <ol class="index_log_section_list js_log_list"> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.更方便地添加微信联系人</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">在微信中收到了好友申请，可将他加为我的税大师外部联系人</span></li> 
+		          <li><span class="index_log_section_list_item_des">支持扫描纸质名片添加微信好友</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.客户联系功能升级</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">可以设置部门经理、店长等为负责人，查看和管理下属添加的客户</span></li> 
+		          <li><span class="index_log_section_list_item_des">新增群发助手，可以给客户发送服务相关或节日祝福等信息</span></li> 
+		          <li><span class="index_log_section_list_item_des">管理员可统一创建企业标签，由成员给客户设置标签。成员也可创建个人标签</span></li> 
+		          <li><span class="index_log_section_list_item_des">管理员和负责人可新建服务消息，并选择需要发送的客户。由成员发送给客户并进行后续的服务</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.开通企业支付更高效</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">支持绑定多个微信支付商户号，一个商户号也可绑定多个税大师的企业。税大师和商户号主体不一致时也可申请绑定</span></li> 
+		          <li><span class="index_log_section_list_item_des">在税大师的管理后台，可通过提交截图资料，注册微信支付商户号、开通支付权限</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">4.打卡优化</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">管理员可在手机端设置按班次上下班、自由上下班规则</span></li> 
+		          <li><span class="index_log_section_list_item_des">在管理后台设置打卡规则时，支持批量导入和导出打卡位置和Wi-Fi</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">5.审批优化</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">支持设置指定某个层级的上级为审批人</span></li> 
+		          <li><span class="index_log_section_list_item_des">可以在假期管理中限制一天最长请假时长</span></li> 
+		          <li><span class="index_log_section_list_item_des">提交审批申请时，处于多个部门的员工可以选择所在部门，更精准地匹配条件审批流程</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">6.更多优化</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">可以为内部同事添加备注和描述了，帮助更好地标注和识别同事</span></li> 
+		          <li><span class="index_log_section_list_item_des">PC端音视频通话窗口可以切换到全屏了，提升沉浸式的会议体验</span></li> 
+		          <li><span class="index_log_section_list_item_des">部门群升级，加入部门的成员会自动进群，离开部门的成员自动退群</span></li> 
+		          <li><span class="index_log_section_list_item_des">汇报记录详情可以识别手机号码了，拨打更便捷</span></li> 
+		          <li><span class="index_log_section_list_item_des">管理员可以创建应用与小程序了</span></li> 
+		          <li><span class="index_log_section_list_item_des">汇报优化，管理员可以将汇报记录导出到pdf</span></li> 
+		         </ul></li> 
+		        <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">7.接口开放</span>
+		         <ul> 
+		          <li><span class="index_log_section_list_item_des">支持通过接口获取可使用客户联系的成员列表</span></li> 
+		          <li><span class="index_log_section_list_item_des">支持通过接口配置「联系我」二维码和「联系我」按钮，方便用户通过面对面扫码、在小程序和公众号中联系成员</span></li> 
+		         </ul></li> 
+		       </ol>
+		      </div> 
+		      <div class="index_log_sectionWrap" :style="{display: versionsShow? 'block' : 'none'}"> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;" @click="testShow = !testShow"> 税大师 2.7 <time class="index_log_section_title_date">2018-12-20</time></a>
+		        <ol class="index_log_section_list js_log_list" v-show="testShow"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增客户联系功能，成员可用税大师添加客户的微信，并与他们联系，企业可统一管理这些客户关系</span></li> 
+		           <li><span class="index_log_section_list_item_des">客户联系：管理员可在手机上实时查看企业全部客户数和每日新增，还可将客户共享给其他成员，再分配离职成员的客户</span></li> 
+		           <li><span class="index_log_section_list_item_des">客户联系：「联系我」二维码和按钮，方便客户通过扫码或点击按钮，获取成员联系方式、联系成员。更有单人与多人随机路由模式，可供管理员配置</span></li> 
+		           <li><span class="index_log_section_list_item_des">客户联系：成员可在通讯录-我的客户中查看与联系自己的客户。还有统计功能，随时查看自己的客户总数和日新增</span></li> 
+		           <li><span class="index_log_section_list_item_des">客户联系：成员更有快捷回复、欢迎语功能，提高沟通效率</span></li> 
+		           <li><span class="index_log_section_list_item_des">外部群支持群主转让和群聊邀请确认了</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可通过认证设置多个企业简称，设置为成员对外名片中的企业名</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.更多功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增“会议邀请”，可以在群聊里给同事发送会议邀请了</span></li> 
+		           <li><span class="index_log_section_list_item_des">发送表情时可搜索出丰富的表情</span></li> 
+		           <li><span class="index_log_section_list_item_des">手机上支持输入多个群成员的名字来搜索群聊，人名以空格隔开</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增部门上级设置，管理员可针对部门设置上级了</span></li> 
+		           <li><span class="index_log_section_list_item_des">成员自定义信息字段新增了网页类型</span></li> 
+		           <li><span class="index_log_section_list_item_des">汇报人员“白名单”可以按部门和标签设置了</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批应用优化，新增“成员”和“部门”控件，提交申请时可快速在通讯录中选取并填入</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批应用优化，支持设置申请人为审批人、抄送人，申请者本人也可以参与到审批流程当中了</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <!-- <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.6.1 <time class="index_log_section_title_date">2018-11-1</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增大头像名片，上传自己的形象照设置专属的对外名片</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可以在移动端编辑成员的对外信息了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.更多功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增“群填表”，快速收集群内各项信息</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增“员工服务”，管理员可以创建员工服务帐号，向员工提供服务和问题咨询</span></li> 
+		           <li><span class="index_log_section_list_item_des">桌面端支持查找聊天记录了</span></li> 
+		           <li><span class="index_log_section_list_item_des">Windows桌面端，新增“远程协助”，可以远程帮助对方处理电脑问题</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持港澳台及海外用户实名认证</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业可以使用企业网银为公费电话充值</span></li> 
+		           <li><span class="index_log_section_list_item_des">“休息一下”可以设置开启语音和视频消息的通知</span></li> 
+		           <li><span class="index_log_section_list_item_des">全新的帮助中心，有热点问题和各种分类，方便更快找到问题及解答</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.6 <time class="index_log_section_title_date">2018-10-19</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可体验与微信用户群聊了，目前可体验不超过10人群聊</span></li> 
+		           <li><span class="index_log_section_list_item_des">未验证企业的成员也可体验添加自己的微信后互发消息，及体验群聊</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.5.8 <time class="index_log_section_title_date">2018-9-25</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持成员在聊天中发送配置的小程序页面给外部联系人，管理员配置后即可使用</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业应用中如有更丰富的外部联系人信息，可将信息页的网址或路径配置在税大师的外部联系人个人信息页，方便成员查看</span></li> 
+		           <li><span class="index_log_section_list_item_des">成员离职后，管理员可以将他的外部联系人分配给其他同事继续跟进。同时开放了相应的API能力</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可以为成员设置专属的对外职务，专用于外部沟通时展示</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业配置的通讯录对外自定义信息字段，支持成员自行修改字段内容</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.更多功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">企业应用可共享给互联企业，方便集团与子公司，上下游企业的互联成员使用应用和接收通知</span></li> 
+		           <li><span class="index_log_section_list_item_des">聊天时收到了外文消息，支持长按后翻译</span></li> 
+		           <li><span class="index_log_section_list_item_des">按班次上下班支持使用考勤机打卡</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.5 <time class="index_log_section_title_date">2018-8-29</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.智慧办公硬件</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">管理员通过税大师添加与管理智慧硬件设备</span></li> 
+		           <li><span class="index_log_section_list_item_des">员工可工作台中使用硬件应用控制设备</span></li> 
+		           <li><span class="index_log_section_list_item_des">可在税大师中购买智慧硬件设备</span></li> 
+		           <li><span class="index_log_section_list_item_des">固定上下班、自由上下班支持同时使用手机和考勤机打卡了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">对外信息与名片，支持展示别名</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.更多功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持普通话语音消息转文字</span></li> 
+		           <li><span class="index_log_section_list_item_des">内部群聊提供群二维码，可扫码入群</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业通讯录中的手机号新增安全查看模式，管理员可按需开启</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批模板可以设置多个条件审批流程</span></li> 
+		           <li><span class="index_log_section_list_item_des">打卡优化，每次上下班都可以更新打卡记录</span></li> 
+		           <li><span class="index_log_section_list_item_des">汇报记录支持关键字搜索</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理后台可设置应用图文消息的分享权限</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.99 <time class="index_log_section_title_date">2018-7-19</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">法人验证和支付验证的企业可报名参与内测，并可在手机端完成企业验证。</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持小程序给企业成员发送通知</span></li> 
+		           <li><span class="index_log_section_list_item_des">更多税大师特有的小程序接口&nbsp;&nbsp;<a href="http://work.weixin.qq.com/api/doc#14270" target="_blank">API文档</a></span></li> 
+		           <li><span class="index_log_section_list_item_des">优化小程序在工作台的展示</span></li> 
+		           <li><span class="index_log_section_list_item_des">第三方应用支持小程序</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.汇报功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">汇报记录可以按汇报人、模板类型和汇报日期进行筛选了</span></li> 
+		           <li><span class="index_log_section_list_item_des">提前汇报的员工无需接收当期填写提醒通知</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.22 <time class="index_log_section_title_date">2018-6-25</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可以和微信联系人进行语音/视频通话</span></li> 
+		           <li><span class="index_log_section_list_item_des">可以通过手机短信和邮件发送个人名片，邀请对方使用微信添加我</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.群聊内可以发起投票了，方便快速统计成员意见</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.汇报功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">给汇报模板设置汇报截止时间，让汇报填写更加高效</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持查看汇报人统计，随时掌握汇报进展</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">4.文件盘的文件支持直接转发到聊天</li> 
+		         <li class="index_log_section_list_item">5.网页支持分享到同事吧</li> 
+		         <li class="index_log_section_list_item">6.在手机上即可提交营业执照等资料完成企业认证，更方便快捷。认证通过后即可参与内测与微信消息互通</li> 
+		         <li class="index_log_section_list_item">7.无外部联系人权限的成员，也可在外部群聊中添加内部同事</li> 
+		         <li class="index_log_section_list_item">8.选择外部联系人的JSAPI优化，可支持滤掉员工已选择过的外部联系人&nbsp;&nbsp;<a href="http://work.weixin.qq.com/api/doc#10029/%E5%A4%96%E9%83%A8%E8%81%94%E7%B3%BB%E4%BA%BA%E9%80%89%E4%BA%BA%E6%8E%A5%E5%8F%A3" target="_blank">API文档</a></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.20 <time class="index_log_section_title_date">2018-6-1</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">消息互通：用税大师直接添加客户、合作伙伴的微信，与他们更好地沟通。现已开启内测报名，内测期间仅支持单人聊天。离职员工的客户关系继承与群聊功能即将上线</span></li> 
+		           <li><span class="index_log_section_list_item_des">消息互通：新增支持文件、聊天记录、地理位置、收藏、图文消息、小程序的收发</span></li> 
+		           <li><span class="index_log_section_list_item_des">消息互通：我的名片”优化，可以自定义名片的样式，分享到微信群中与客户建立好友关系</span></li> 
+		           <li><span class="index_log_section_list_item_des">小程序：只需要做些简单的适配工作，即可将微信小程序关联到税大师上运行。现无需申请内测，所有企业都可关联</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业支付：绑定已有的微信支付商户号，即可在税大师内使用支付能力，包括企业对外收款、对外付款，和税大师特有能力，向员工收付款和企业红包</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持通过API接口获得微信联系人的微信union id，实现公众号/小程序用户与外部联系人的身份识别。&nbsp;&nbsp;<a href=" https://work.weixin.qq.com/api/doc#13878" target="_blank">API文档</a></span></li> 
+		           <li><span class="index_log_section_list_item_des">支持通过JSAPI接口调起外部联系人列表，CRM应用可快捷添加客户信息&nbsp;&nbsp;<a href=" https://work.weixin.qq.com/api/doc#10029/跳转到个人信息页接口" target="_blank">API文档</a></span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.更多功能优化</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持企业与企业间建立互联关系，共享部分企业通讯录，让双方成员沟通协作更高效便捷</span></li> 
+		           <li><span class="index_log_section_list_item_des">员工提交请假申请时，可以查看自己的假期余额。Web管理后台新增假期管理功能，支持设置请假类型和假期余额，员工请假后可根据审批单自动扣假</span></li> 
+		           <li><span class="index_log_section_list_item_des">客户端支持繁体中文界面显示</span></li> 
+		           <li><span class="index_log_section_list_item_des">Mac版聊天窗口增加“消息记录”功能，可以快速搜索当前聊天的内容</span></li> 
+		           <li><span class="index_log_section_list_item_des">文件盘误删除了文件，15天内可在回收站里找回</span></li> 
+		           <li><span class="index_log_section_list_item_des">拥有已认证的微信公众号的企业，可在手机上快速完成税大师认证，对外展示已认证标识</span></li> 
+		           <li><span class="index_log_section_list_item_des">语音/视频来电通知可以在 Apple Watch 显示</span></li> 
+		           <li><span class="index_log_section_list_item_des">在手机上可以完整设置固定上下班规则了</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.18 <time class="index_log_section_title_date">2018-5-7</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.连接微信功能升级：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">消息互通：成员使用税大师帐号添加微信用户为好友后，可与微信用户互发消息。现已开启内测报名</span></li> 
+		           <li><span class="index_log_section_list_item_des">小程序：做些简单的适配工作，即可将微信小程序关联到税大师上运行</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业支付：企业可以在税大师内给员工发红包、付款或向员工收款，也可以通过微信买单对外收款</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可登录Web管理后台查看详细介绍与配置</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.外部联系人功能优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">在管理端可查看成员添加的所有企业客户信息</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持在网页内通过jsapi发起与微信联系人的聊天&nbsp;&nbsp;<a href="//work.weixin.qq.com/api/doc#10029/%E5%88%9B%E5%BB%BA%E4%BC%9A%E8%AF%9D%E6%8E%A5%E5%8F%A3" target="_blank">API文档</a></span></li> 
+		           <li><span class="index_log_section_list_item_des">企业可设置回调地址，主动接收企业客户变更事件&nbsp;&nbsp;<a href=" https://work.weixin.qq.com/api/doc#13642" target="_blank">API文档</a></span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.Windows版功能升级，让你日常办公更高效：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增『在电脑前』与『离开电脑』状态，与同事办公协同更高效</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增小字号并优化聊天界面，阅读消息更高效</span></li> 
+		           <li><span class="index_log_section_list_item_des">免打扰的聊天可设置聚合，消息列表更干净</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增一套常用操作的快捷键，处理消息更高效</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">4.汇报功能优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持查看汇报数据的统计报表</span></li> 
+		           <li><span class="index_log_section_list_item_des">接收人数上限提升，可以向更多人做汇报</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">5.成员申请加入优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">分级管理员也可审核成员的加入申请，将成员添加到自己管理的部门内</span></li> 
+		           <li><span class="index_log_section_list_item_des">可设置成员申请加入通过后默认所属的部门</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.16 <time class="index_log_section_title_date">2018-4-11</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.外部联系人多项功能升级：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">添加微信用户为外部联系人，与微信消息互通，现已开启内测报名</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业可自定义成员的对外信息，统一管理成员对外形象</span></li> 
+		           <li><span class="index_log_section_list_item_des">成员可标记外部联系人为企业客户，方便企业统一管理客户资料</span></li> 
+		           <li><span class="index_log_section_list_item_des">企业可设置仅部分成员与外部联系</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.企业应用可以通过API创建群聊及推送消息到群</li> 
+		         <li class="index_log_section_list_item">3.将经常消息往来的同事设为“星标联系人”，发起聊天时可更快找到他(她)</li> 
+		         <li class="index_log_section_list_item">4.税大师提供了丰富的第三方优质应用，改版后，将更方便企业挑选符合自己的应用，满足企业的个性化需求</li> 
+		         <li class="index_log_section_list_item">5.企业为员工设立了奖励，员工加入企业，并使用税大师移动办公即可获取奖励</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">6.日报应用升级为汇报：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">预设日报、周报、月报，手机即可高效填写工作汇报</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员在手机端即可启用销售日报、门店日报等多款模板，满足多样需求</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">7.群管理功能优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">仅群主可以将成员移出群聊</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增“群聊邀请确认”，开启后，群成员需群主确认才能邀请成员进群</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">8.OA应用持续优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">打卡补卡升级为按次提交，自动填入时间，补卡更精准</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批支持创建多个请假、报销模板</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批支持设置为提交时或通过后进行抄送</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.12 <time class="index_log_section_title_date">2018-3-16</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.引用功能升级：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持引用图片、文件和聊天记录</span></li> 
+		           <li><span class="index_log_section_list_item_des">点击引用内容可定位到原消息</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.Android版发消息时，支持拍摄视频发送</li> 
+		         <li class="index_log_section_list_item">3.电脑端，群聊可一键复制所有群成员的帐号和邮箱地址</li> 
+		         <li class="index_log_section_list_item">4.公费电话去电支持显示拨打者手机号码</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">5.Web管理后台，通讯录管理更灵活：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">敏感成员信息显示，支持添加白名单</span></li> 
+		           <li><span class="index_log_section_list_item_des">限制查看所有人，支持添加白名单</span></li> 
+		           <li><span class="index_log_section_list_item_des">对仅有通讯录查看权限的分级管理员，可设置只能查看部分字段</span></li> 
+		           <li><span class="index_log_section_list_item_des">可自定义管理后台的通讯录列表显示字段</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">6.Web管理后台，开通企业支付支持绑定已有商户号</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.9 <time class="index_log_section_title_date">2018-2-1</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.客户端支持英文界面显示</li> 
+		         <li class="index_log_section_list_item">2.企业支付新增对外收款能力，管理员在“管理后台-企业支付”中设置后，成员即可使用对外收款</li> 
+		         <li class="index_log_section_list_item">3.iOS版支持3D Touch</li> 
+		         <li class="index_log_section_list_item">4.Android版支持聊天发送文件</li> 
+		         <li class="index_log_section_list_item">5.桌面版界面优化，三栏结构更高效</li> 
+		         <li class="index_log_section_list_item">6.管理后台新增法定代表人验证企业信息</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4.5 <time class="index_log_section_title_date">2017-12-29</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.电脑上可以使用待办了，高效记录你的工作：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">对聊天内容右键操作，可快速添加到待办</span></li> 
+		           <li><span class="index_log_section_list_item_des">设置提醒时间，定时提醒待办工作</span></li> 
+		           <li><span class="index_log_section_list_item_des">添加同事为待办参与人，共享工作完成情况</span></li> 
+		           <li><span class="index_log_section_list_item_des">从菜单栏快速打开待办列表，查看和记录待办工作</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.开启代码消息选项，程序员即可在电脑端发送格式化的代码片段，更好地用代码沟通工作</li> 
+		         <li class="index_log_section_list_item">3.手机支持长按引用消息</li> 
+		         <li class="index_log_section_list_item">4.手机中的文件支持上传到文件盘</li> 
+		         <li class="index_log_section_list_item">5.查看收到的代码文件，有了更好的阅读效果</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">6.打卡优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">外出打卡可设置打卡时必须拍照</span></li> 
+		           <li><span class="index_log_section_list_item_des">自由上下班打卡也能允许员工提交补卡申请</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">7.更多优化：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">Web管理后台支持使用税大师扫码登录</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增邀请API，支持通过接口邀请成员使用税大师</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增成员加入申请的备注字段，开启后方便管理员识别成员身份</span></li> 
+		           <li><span class="index_log_section_list_item_des">审批：优化了模板的编辑功能，编辑的同时即可预览模板效果</span></li> 
+		           <li><span class="index_log_section_list_item_des">在搜索栏粘贴多个联系人可以一键发起群聊</span></li> 
+		          </ul></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.4 <time class="index_log_section_title_date">2017-11-30</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.手机提醒功能升级为待办，高效记录你的工作：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">在聊天窗口双击空白处即可快速创建待办</span></li> 
+		           <li><span class="index_log_section_list_item_des">双击查看聊天内容时，可一键添加到待办</span></li> 
+		           <li><span class="index_log_section_list_item_des">设置提醒时间，定时提醒待办工作</span></li> 
+		           <li><span class="index_log_section_list_item_des">添加同事为待办参与人，共享工作完成情况</span></li> 
+		           <li><span class="index_log_section_list_item_des">待办列表默认在聊天中置顶，方便查看和记录待办工作</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.新增我的电子名片，可编辑选择多种名片样式。名片扫码时可展示给对方，也可向对方递出你的名片，让商务联系更正式</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.手机上管理功能更丰富：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">应用较多时，可进行分组和排序</span></li> 
+		           <li><span class="index_log_section_list_item_des">可以查看每天的成员使用记录</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">4.打卡：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可添加上下班汇报对象，定期汇报打卡情况</span></li> 
+		           <li><span class="index_log_section_list_item_des">在打开在打开税大师时，可以自动打上班卡</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">5.合并转发消息时支持选择聊天记录了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.3 <time class="index_log_section_title_date">2017-11-07</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.管理员可在手机上管理企业了：</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">通讯录管理更加方便，成员加入企业及使用情况一目了然</span></li> 
+		           <li><span class="index_log_section_list_item_des">轻松管理企业应用</span></li> 
+		           <li><span class="index_log_section_list_item_des">可发送应用消息，支持查看已发送和撤回消息</span></li> 
+		           <li><span class="index_log_section_list_item_des">更丰富的企业个性化设置</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.管理员可在手机上添加精选的第三方应用，覆盖团队协同、CRM、HR等多个领域</li> 
+		         <li class="index_log_section_list_item">3.打卡记录支持导入考勤机数据，还能结合审批单据，自动核算员工出勤</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">4.文件盘:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">电脑端支持上传文件夹</span></li> 
+		           <li><span class="index_log_section_list_item_des">手机端也能排序查看文件</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">5.审批:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">支持搜索，快速查找历史单据</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可以删除审批记录了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">6.分级管理员可以在Web管理后台对通讯录排序</li> 
+		         <li class="index_log_section_list_item">7.企业认证流程支持开具电子发票</li> 
+		         <li class="index_log_section_list_item">8.全员群的成员上限升级到10000了</li> 
+		         <li class="index_log_section_list_item">9.加入了多个企业的用户，可以方便地查看多企业的新消息了，还可快速切换企业</li> 
+		         <li class="index_log_section_list_item">10.iPad版支持扫一扫、红包和打卡等功能了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.2 <time class="index_log_section_title_date">2017-09-29</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.新增文件盘，可以在手机上随时访问企业文件了:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可对不同成员分配编辑/浏览权限</span></li> 
+		           <li><span class="index_log_section_list_item_des">iOS、Android、Windows、Mac端随时访问</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可在管理后台管理分区与容量</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.全新适配iPad版本，带来更舒适的体验</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.审批优化:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">管理员开启后，已通过的审批单也能申请撤销</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可在管理后台调整审批模板顺序</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">4.企业支付优化:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">报销、采购、费用等涉及金额的审批单，可以使用企业支付向员工付款了</span></li> 
+		           <li><span class="index_log_section_list_item_des">发放企业红包更简单了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">5.在电脑上转发消息时，可以创建新的聊天了</li> 
+		         <li class="index_log_section_list_item">6.管理员可以在手机上方便地邀请成员使用税大师</li> 
+		         <li class="index_log_section_list_item">7.离职人员的打卡记录也能被检索到了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.1.3 <time class="index_log_section_title_date">2017-09-06</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.无需登录管理后台，在手机上就可以管理企业:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">选择微信好友、手机通讯录中的同事，一键添加到公司通讯录</span></li> 
+		           <li><span class="index_log_section_list_item_des">可以直接设置上下班打卡规则</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持查看打卡的实时统计结果，按部门和打卡状态查看明细</span></li> 
+		           <li><span class="index_log_section_list_item_des">快速启用需要的审批模板，设置更加便捷</span></li> 
+		           <li><span class="index_log_section_list_item_des">可以发应用消息了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.审批:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">界面优化和性能升级，带来更流畅的使用体验</span></li> 
+		           <li><span class="index_log_section_list_item_des">报销模板支持自定义选项和字段</span></li> 
+		           <li><span class="index_log_section_list_item_des">请假、外出等审批记录可以在管理后台按照请假、外出时间筛选了</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">3.红包及付款API支持通过应用下发支付消息，企业可定制更多支付功能</li> 
+		         <li class="index_log_section_list_item">4.转发消息时，可以同时转到多个聊天</li> 
+		         <li class="index_log_section_list_item">5.电脑上的多选消息转发，更好用了</li> 
+		         <li class="index_log_section_list_item">6.邮箱收到了会议邀请，可自动写入系统日历</li> 
+		         <li class="index_log_section_list_item">7.Mac客户端支持发送文件夹了</li> 
+		         <li class="index_log_section_list_item">8.退出群聊时，只通知群主，避免打扰其他群成员</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.1.2 <time class="index_log_section_title_date">2017-08-16</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.Windows支持会话内搜索聊天记录，集中查看文件和图片，查找更高效</li> 
+		         <li class="index_log_section_list_item">2.Mac桌面端也有了新设计，带来更清爽的用户体验</li> 
+		         <li class="index_log_section_list_item">3.所有群成员都可以编辑群公告了</li> 
+		         <li class="index_log_section_list_item">4.分级管理员也可以新建管理组了</li> 
+		         <li class="index_log_section_list_item">5.分级管理员也可以导出通讯录，同时支持选择特定范围导出</li> 
+		         <li class="index_log_section_list_item">6.通讯录标签可以批量导入和导出了</li> 
+		         <li class="index_log_section_list_item">7.工作台应用较多时，企业可根据类别和使用频率对应用分组和排序了</li> 
+		         <li class="index_log_section_list_item">8.同事吧可以分别设置是否允许匿名发帖、匿名回帖了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.1 <time class="index_log_section_title_date">2017-07-21</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.企业支付&amp;支付API:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增企业红包，以企业的名义发放现金红包，例如节日红包、奖励红包等</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增向员工付款，企业直接付款至员工微信零钱，适用报销、申请等</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增向员工收款，适用对公费用缴纳场景，如充饭卡、交停车费等，还支持二维码收款</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增企业支付API，企业可以使用红包、付款、收款API定制丰富应用场景</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">2.可以给同事的工作状态点赞，工作状态可分享到朋友圈了</li> 
+		         <li class="index_log_section_list_item">3.Windows客户端持续优化，新增会话内搜索聊天记录，发送文件夹，拖拽发送图片等</li> 
+		         <li class="index_log_section_list_item">4.企业可在管理端设置专属的手机启动页</li> 
+		         <li class="index_log_section_list_item">5.可以给邀一得一红包充值了，成员加入、邀请同事后即可领红包</li> 
+		         <li class="index_log_section_list_item">6.iPhone用户也可以直接预览压缩包文件了</li> 
+		         <li class="index_log_section_list_item">7.聊天时可以方便地分享同事或外部联系人的名片了</li> 
+		         <li class="index_log_section_list_item">8.新增选择电子发票的JSAPI，用于员工在税大师中选择保存在微信卡包的电子发票以提交报销</li> 
+		         <li class="index_log_section_list_item">9.地点及设备异常时可提交补卡申请，事后也可通过审批或者打卡日历补提交</li> 
+		         <li class="index_log_section_list_item">10.审批新增会签功能，可多个成员同时审批，全部同意才能通过</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 2.0 <time class="index_log_section_title_date">2017-06-29</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.税大师与企业号产品合并，企业号现已升级为税大师，将继承企业号的所有能力</li> 
+		         <li class="index_log_section_list_item">2.为企业提供了优质的第三方应用，覆盖移动办公、团队协同、客户关系、文化建设等多个领域</li> 
+		         <li class="index_log_section_list_item">3.新增工作状态功能，让忙碌也变成趣味</li> 
+		         <li class="index_log_section_list_item">4.提供私有化部署版本，有需求的企业可注册登记</li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">5.打卡:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">迟到或早退时可提交补卡申请，管理员审批通过后会自动补卡</span></li> 
+		           <li><span class="index_log_section_list_item_des">打卡不在范围时，会显示具体偏离情况，方便调整位置后打卡</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">6.管理后台:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可根据请假、出差等审批单据校准打卡状态，自动生成精确的出勤报表</span></li> 
+		           <li><span class="index_log_section_list_item_des">可查看审批、打卡记录的附件和图片，并支持导出到Excel</span></li> 
+		           <li><span class="index_log_section_list_item_des">离职人员的审批、打卡记录将继续保留，方便核算</span></li> 
+		           <li><span class="index_log_section_list_item_des">可设置日报自定义模版，日常汇报更加规范</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">7.优化图片和文件传输，传输速率再提升</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.11 <time class="index_log_section_title_date">2017-06-13</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.审批:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">新增条件审批，管理员可根据不同场景定义不同审批流程</span></li> 
+		           <li><span class="index_log_section_list_item_des">在管理后台将审批人设置为通讯录标签，由标签中的多人并行审批一个单据，只要其中一人同意即可流转</span></li> 
+		           <li><span class="index_log_section_list_item_des">可设置员工提交申请时不可修改审批人</span></li> 
+		           <li><span class="index_log_section_list_item_des">自定义模版增加金额、多选、明细字段，支持拖动排序</span></li> 
+		           <li><span class="index_log_section_list_item_des">新增审批分类汇总，待办、提交、抄送一目了然</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.打卡:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可在管理后台为上下班打卡添加自定义地点</span></li> 
+		           <li><span class="index_log_section_list_item_des">管理员可为外出打卡位置纠错，员工定位判断更准确</span></li> 
+		           <li><span class="index_log_section_list_item_des">优化打卡记录的状态展示，异常情况更明确</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">3.日报:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">可以对收到的日报进行评论</span></li> 
+		           <li><span class="index_log_section_list_item_des">支持在管理后台查看和导出历史记录，还能设置实时汇报提醒</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">4.支持设置打卡、日报、审批等应用及单个审批模版的可见范围，应用管理更方便</li> 
+		         <li class="index_log_section_list_item">5.全新设计的 Windows桌面端，带来更清爽的用户体验</li> 
+		         <li class="index_log_section_list_item">6.群聊可以保存到通讯录，查找更方便</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.9 <time class="index_log_section_title_date">2017-05-19</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.提供更丰富的审批模版，支持添加附件、时间字段和API导出数据。同时新增审批同意也可添加意见，请假可与法定节假日关联等特性</li> 
+		         <li class="index_log_section_list_item">2.可设置非工作日也允许打卡，打卡记录支持多部门、最长三个月数据查询导出，还提供可方便设置打卡WiFi的小工具</li> 
+		         <li class="index_log_section_list_item">3.电脑上也能写日报了，还支持了写日报可添加附件、将提醒时间设为当天</li> 
+		         <li class="index_log_section_list_item">4.新增邀一得一红包功能，员工加入企业或邀请同事加入即可抢红包。帮助管理员快速邀请成员加入</li> 
+		         <li class="index_log_section_list_item">5.系统相册、Safari、其他应用中的内容，可通过iOS原生分享插件分享到税大师</li> 
+		         <li class="index_log_section_list_item">6.电脑上聊天时支持右键引用消息，沟通更清晰</li> 
+		         <li class="index_log_section_list_item">7.支持设置同事吧、公告的可见范围，让有需要的成员才看到和使用应用</li> 
+		         <li class="index_log_section_list_item">8.通讯录新增自由排序，设置后可以灵活拖拽自由排序成员</li> 
+		         <li class="index_log_section_list_item">9.管理员可以在管理后台设置企业的工作台显示为九宫格了</li> 
+		         <li class="index_log_section_list_item">10.管理员可以在管理后台设置允许成员自行修改哪些通讯录字段了</li> 
+		         <li class="index_log_section_list_item">11.公费电话去电恢复为显示拨打者手机号码</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.8 <time class="index_log_section_title_date">2017-04-26</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.领取1000分钟公费电话时长，方便与客户、同事多人通话沟通工作</li> 
+		         <li class="index_log_section_list_item">2.获取专属域名的企业邮箱，在税大师中收发工作邮件</li> 
+		         <li class="index_log_section_list_item">3.发出的消息可以查看对方的已读未读状态，沟通更高效</li> 
+		         <li class="index_log_section_list_item">4.打卡升级，支持通过API获取打卡数据，自由上下班模式下可设置周末是否需要打卡</li> 
+		         <li class="index_log_section_list_item">5.审批优化，请假时间可以精确到小时，更精细设置满足企业多样化需求 </li> 
+		         <li class="index_log_section_list_item">6.通讯录一次性导出所有未激活成员，方便拉动全体公司员工更快更好的使用税大师</li> 
+		         <li class="index_log_section_list_item">7.群主可以解散不需要的群聊了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.7 <time class="index_log_section_title_date">2017-04-05</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.手机快速创建企业，邀请同事一起使用</li> 
+		         <li class="index_log_section_list_item">2.预设打卡、日报、请假、报销等轻量OA应用，无需配置简单易用</li> 
+		         <li class="index_log_section_list_item">3.新增日报应用，手机上就能方便地记录和汇报工作</li> 
+		         <li class="index_log_section_list_item">4.优化了请假和报销应用，管理员还可添加自定义审批模板</li> 
+		         <li class="index_log_section_list_item">5.电脑端也可以转发聊天记录了</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.6 <time class="index_log_section_title_date">2017-03-15</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.手机端注册税大师后，可邀请同事加入，共同使用考勤、企业邮箱等应用</li> 
+		         <li class="index_log_section_list_item">2.新增内部交流论坛“同事吧”，企业成员可发表帖子进行知识提问、二手买卖、活动组织等</li> 
+		         <li class="index_log_section_list_item">3.手机上工作台的入口移至底部菜单，使用工作应用更快捷</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.3 <time class="index_log_section_title_date">2017-01-10</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.在会话中拍摄文档、证件、发票，即可快速将它们变为PDF或JPG文件分享给同事</li> 
+		         <li class="index_log_section_list_item">2.可以选择删除部分聊天记录，或清空某个群的聊天记录</li> 
+		         <li class="index_log_section_list_item">3.群聊有了更多管理功能，群主可以发布群公告了，还能启用仅群主可增删群成员</li> 
+		         <li class="index_log_section_list_item">4.考勤功能升级。为管理员提供了按员工排班、WiFi打卡、弹性时间等多项设置</li> 
+		         <li class="index_log_section_list_item">5.管理员可设置在底部操作栏显示工作台，方便成员快速打开工作应用</li> 
+		         <li class="index_log_section_list_item">6.优化注册流程，更快开始使用税大师</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3.2 <time class="index_log_section_title_date">2016-11-30</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.优化注册流程，微信登录后只需简单两步，个人即可使用税大师</li> 
+		         <li class="index_log_section_list_item">2.优化工作名片，支持把名片分享到微信群，用正式的工作身份和商务伙伴聊工作</li> 
+		         <li class="index_log_section_list_item">3.在税大师发起新群聊时，可选择已有的微信群，快速组建工作群聊</li> 
+		         <li class="index_log_section_list_item">4.添加群聊成员时，可以一键邀请微信好友，或通过分享群二维码邀请，添加成员更便捷</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.3 <time class="index_log_section_title_date">2016-11-03</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.无需管理员开通，个人也可以使用税大师</li> 
+		         <li class="index_log_section_list_item">2.添加微信和手机联系人中的工作伙伴，用专业的名片和他们聊工作</li> 
+		         <li class="index_log_section_list_item">3.提供API，方便企业接入更多办公应用</li> 
+		         <li class="index_log_section_list_item">4.高清稳定的视频会议，支持文档演示和屏幕共享，支持用电话接入，可9人同时参与</li> 
+		         <li class="index_log_section_list_item">5.微信中的聊天记录、订阅文章，都可一键快速分享到。税大师也可转发到微信</li> 
+		         <li class="index_log_section_list_item">6.清理手机中已下载的文件和图片，释放手机存储空间</li> 
+		         <li class="index_log_section_list_item">7.电脑端新增工作台入口，可快速找到工作应用</li> 
+		         <li class="index_log_section_list_item">8.管理端新增通讯录同步与消息群发功能，让管理企业通讯录、给成员发送通知更便捷</li> 
+		         <li class="index_log_section_list_item">9.管理员登录企业号管理后台关联税大师，即可自动从企业号同步通讯录与应用</li> 
+		         <li class="index_log_section_list_item">10.管理员可自定义考勤打卡范围，考勤设置更灵活</li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.2 <time class="index_log_section_title_date">2016-08-02</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">1.邮箱提醒升级:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">无论你使用哪种邮箱工作，都可以在此接收新邮件提醒，并对邮件发起即时群聊讨论</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item index_log_section_list_item_Special"><span class="index_log_section_list_item_title">2.休息一下功能升级:</span>
+		          <ul> 
+		           <li><span class="index_log_section_list_item_des">收到新消息时，可快速小休或下班了</span></li> 
+		           <li><span class="index_log_section_list_item_des">上下班考勤打开时，可同时开启或结束休息</span></li> 
+		           <li><span class="index_log_section_list_item_des">设置下班时间，到点自动下班了</span></li> 
+		           <li><span class="index_log_section_list_item_des">添加重要联系人，休息中不错过重要消息</span></li> 
+		          </ul></li> 
+		         <li class="index_log_section_list_item">3.文件传输加速，局域网内直传，相同文件还能秒传</li> 
+		         <li class="index_log_section_list_item">4.考勤时间可添加多个时段，并为不同部门设置不同打卡规则</li> 
+		         <li class="index_log_section_list_item">5.公费电话可以对部门或成员设置拨打权限和额度</li> 
+		         <li class="index_log_section_list_item">6.使用RTX腾讯通的企业，管理员安装RTX税大师和微信插件后，成员即可用税大师在手机上收发RTX的消息 <a href="https://work.weixin.qq.com/wework_admin/rtx_plugin?from=wwindex" target="_blank" class="index_log_section_list_item_learnMoreLink">了解更多</a></li> 
+		        </ol>
+		       </div> 
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.1 <time class="index_log_section_title_date">2016-06-06</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.可以收发红包了，更有个人专属红包</li> 
+		         <li class="index_log_section_list_item">2.有了气泡先生表情和自定义表情，表情云端同步</li> 
+		         <li class="index_log_section_list_item">3.手机上可以将图片和文件分享到微信</li> 
+		         <li class="index_log_section_list_item">4.电脑和手机同时在线时，手机不会重复收到提醒</li> 
+		         <li class="index_log_section_list_item">5.电脑端消息管理器支持多条件复合搜索，方便查找内容</li> 
+		         <li class="index_log_section_list_item">6.通讯录管理功能升级，管理员可以隐藏部门/成员，指定查看权限等</li> 
+		        </ol>
+		       </div>  -->
+		       <div class="index_log_section">
+		        <a class="index_log_section_title js_version_title_btn" href="javascript:;"> 税大师 1.0 <time class="index_log_section_title_date">2016-04-18</time></a>
+		        <ol class="index_log_section_list js_log_list"> 
+		         <li class="index_log_section_list_item">1.全平台同步推出，消息云端同步</li> 
+		         <li class="index_log_section_list_item">2.可以发送文字、语音、图片和文件沟通工作</li> 
+		         <li class="index_log_section_list_item">3.重要信息使用回执消息，确保触达</li> 
+		         <li class="index_log_section_list_item">4.为会议、待办事项设置提醒，避免遗忘</li> 
+		         <li class="index_log_section_list_item">5.用公费电话沟通工作，可同时多人参加</li> 
+		         <li class="index_log_section_list_item">6.绑定腾讯企业邮箱，接收实时的新邮件提醒</li> 
+		         <li class="index_log_section_list_item">7.发封公告就能将公司信息传达给所有员工</li> 
+		         <li class="index_log_section_list_item">8.在手机上就能轻松完成考勤、请假和报销</li> 
+		         <li class="index_log_section_list_item">9.下班后，用休息一下进入工作免打扰模式</li> 
+		        </ol>
+		       </div> 
+		      </div>
+		     </div>
+			    <div class="index_log_operate" :class="{index_log_operate_Collapase: versionsShow}">
+			      	<a href="javascript:;" class="index_log_operate_open" @click="versionsShow = true">全部更新日志 
+			      		<span class="ww_officialImg ww_officialImg_Plus index_log_operate_open_normal"></span>
+			      		<span class="ww_officialImg ww_officialImg_PlusHover index_log_operate_open_hover"></span>
+			      	</a> 
+			      	<a href="javascript:;" class="index_log_operate_open" @click="versionsShow = false">收起 
+			      		<span class="ww_officialImg ww_officialImg_Collapse index_log_operate_open_normal"></span>
+			      		<span class="ww_officialImg ww_officialImg_CollapseHover index_log_operate_open_hover"></span>
+			      	</a>
+			    </div>
+		    </div>
+		    <div class="index_bottomVideo"> 
+		     <a href="javascript:;" ontouchstart="" class="index_bottomVideo_btn js_index_video_playBtn">观看品牌视频 | 路<i class="index_bottomVideo_arrow"></i></a> 
+		    </div>
+		   </div>
+		</main>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+	var app = new Vue({
+	  el: '#app',
+	  data: {
+	  	testShow: false,              //版本展示和收起-----临时，第一个
+	  	versionsShow: false,
+	  	unfoldShow: false,
+	    experience: [
+	    	{
+	    		img: './images/one.png',
+	    		title: '与微信一致的沟通体验',
+	    		describe: '简单易用，零成本上手，用熟悉的方式工作。'
+	    	},
+	    	{
+	    		img: './images/two.png',
+	    		title: '连接微信',
+	    		describe: '用税大师直接添加微信用户为好友，更好地沟通工作。同时可运行小程序，使用微信支付能力。'
+	    	},
+	    	{
+	    		img: './images/three.png',
+	    		title: '丰富的办公应用',
+	    		describe: '预设打卡、审批等OA应用，提供丰富的第三方应用供选择，还支持API接入自有应用。'
+	    	},
+	    	{
+	    		img: './images/four.png',
+	    		title: '全面安全保障',
+	    		describe: '国际权威认证，银行级别加密水平，保障企业数据安全。'
+	    	}
+	    ]
+	  },
+  	  mounted() {
+  	  	var _this = this
+  	  	this.$nextTick(()=>{
+  	  		this.$refs.home.style.height = document.documentElement.clientHeight + "px"
+  	  		document.addEventListener("scroll",function(event) {
+  	  			var height = document.documentElement.scrollTop/2
+  	  			_this.$refs.home.style.transform = `translateY(${height}px)`
+  	  		})
+  	  	})
+   	  }
+	})
+	var mySwiper = new Swiper ('.swiper-container', {
+	   init: false,
+	   slidesPerView: 4,
+	   spaceBetween: 45,
+	   setWrapperSize: true,
+	   loop: true,
+	   navigation: {
+	   	nextEl: '.index_section_caseNew_navBtn_next',
+	   	prevEl: '.index_section_caseNew_navBtn_prev',
+	   },
+	   slidesPerGroup: 1,
+	   breakpoints: {
+	   	1100: {
+	   		slidesPerView: 3,
+	   		slidesPerGroup: 1,
+	   	}
+	   }
+	})
+	window.onload = function(){
+		mySwiper.init();
+		document.querySelector('.swiper-container').style.visibility = 'visible';
+	};
+</script>
+</html>

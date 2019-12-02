@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>API</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style/detail/add.css"> -->
+	<link rel="stylesheet" type="text/css" href="style/detail/add.css">
+	<link rel="stylesheet" type="text/css" href="style/detail/font.css">
+	<style type="text/css">
+		[v-cloak] {
+		    display: none !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="frame" v-cloak>
+	    <div>
+	    	<div class="apiHeader_frame">
+	     		<div class="apiHeader">
+	      			<div class="apiHeader_logoWrap">
+	       			<a href="//work.weixin.qq.com/?from=openApi" target="_blank">
+	        		<svg width="120" height="30" viewbox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				  	<defs>
+				         <path d="M.445.694a.453.453 0 0 0-.031.603c.009.013.02.024.031.035.019.02.04.038.062.053a5.807 5.807 0 0 1 1.71 3.104 1.922 1.922 0 0 0 .063.384 1.9 1.9 0 0 0 .482.837 1.86 1.86 0 0 0 2.648 0c.73-.738.73-1.934 0-2.672a1.853 1.853 0 0 0-.903-.506 1.495 1.495 0 0 0-.112-.022c-.037-.007-.075-.011-.113-.017A5.716 5.716 0 0 1 1.26.883c-.064-.062-.122-.125-.18-.189A.441.441 0 0 0 .76.561a.437.437 0 0 0-.316.133z" id="svg_841fb010_a" class="path_1"></path>
+				         <path d="M2.479 1.447a1.892 1.892 0 0 0-.5.911 1.615 1.615 0 0 0-.022.114 1.603 1.603 0 0 0-.015.114A5.83 5.83 0 0 1 .346 5.639c-.06.062-.125.122-.188.18v.002a.455.455 0 0 0 0 .639.444.444 0 0 0 .598.031c.012-.01.025-.02.035-.031a.465.465 0 0 0 .052-.063A5.728 5.728 0 0 1 3.918 4.67a1.828 1.828 0 0 0 .38-.064c.304-.083.59-.244.83-.486a1.902 1.902 0 0 0 0-2.673 1.86 1.86 0 0 0-2.648 0h-.001z" id="svg_841fb010_b" class="path_3"></path>
+				         <path d="M.916.78a1.903 1.903 0 0 0 0 2.674c.258.259.572.426.903.504.036.008.074.016.112.022.038.006.075.012.113.016a5.734 5.734 0 0 1 3.024 1.61c.06.062.121.127.18.191a.446.446 0 0 0 .633 0 .456.456 0 0 0 .031-.604.463.463 0 0 0-.094-.088l-.13-.126A5.83 5.83 0 0 1 4.108 2a1.495 1.495 0 0 0-.02-.183A1.89 1.89 0 0 0 3.565.78 1.86 1.86 0 0 0 2.24.225c-.479 0-.958.185-1.324.554z" id="svg_841fb010_c" class="path_5"></path>
+				         <path d="M5.57.934c-.012.01-.025.02-.035.031a.564.564 0 0 0-.053.064c-.04.044-.083.087-.124.13a5.733 5.733 0 0 1-2.95 1.597 1.856 1.856 0 0 0-.38.063 1.867 1.867 0 0 0-.83.486 1.902 1.902 0 0 0 0 2.673 1.86 1.86 0 0 0 2.648 0c.258-.26.424-.577.5-.911.01-.037.016-.075.023-.113.006-.038.01-.075.015-.115a5.828 5.828 0 0 1 1.594-3.051c.064-.063.126-.125.19-.183a.454.454 0 0 0 0-.64.445.445 0 0 0-.598-.032z" id="svg_841fb010_d" class="path_7"></path>
+				        </defs>
+	           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="Symbols">
+	            <g class="_________API">
+	             <g class="_________API">
+	              <g class="Logo_white">
+	               <g transform="translate(0 .7)" class="__logo">
+	                <g transform="translate(36.25 4.5)" fill="#0082EF" class="Group_11">
+	                 <path d="M.505 7.064C3.883 5.359 6.929 2.989 9.328.198h1.341c2.512 2.872 5.546 5.225 8.79 6.814l-.966 1.767c-3.258-1.731-6.068-3.992-8.352-6.724l-.144-.17-.14.171c-2.131 2.581-4.968 4.848-8.433 6.74l-.92-1.732zm.842 11.376v-1.703h3.078V8.77H6.12v7.967H9.75V5.757h1.74v4.567h5.4v1.704h-5.4v4.709h6.912v1.703H1.347z" class="Combined_Shape"></path>
+	                 <path d="M22.499 4.835c1.095 3.106 1.943 6.053 2.588 8.998l1.604-.392a72.12 72.12 0 0 0-2.7-9.114l-1.492.508zm12.814 8.507l1.522.539c1.098-2.479 2.017-5.418 2.808-8.972l-1.549-.443c-.963 4.097-1.803 6.779-2.78 8.876zM22.014 18.44h18.13v-1.757h-6.228V.323h-1.802v16.36H29.77V.323h-1.8v16.36h-5.956v1.757z" class="Fill_5"></path>
+	                 <path d="M47.706 6.228h6.326v-4.89H52.86v3.555h-1.335V.208l-1.345-.01.046 4.695h-1.36V1.338h-1.159v4.89zm-5.549-.742l.775 1.46a15.533 15.533 0 0 0 4.02-5.86l-1.369-.74c-.744 1.865-2.065 3.847-3.426 5.14zM57.95 11.8l-.193-.624c-.385-1.241-.773-2.965-1.093-4.856l-.008-.041.012-.04c.063-.234.093-.403.125-.582.03-.171.062-.35.124-.594l.034-.141h1.94l-.007.193c-.089 2.416-.34 4.395-.77 6.053l-.164.632zm-11.092 5.957l1.104 1.154c1.136-1.268 1.73-3.057 1.767-5.322v-1.125h1.986v3.259a1.209 1.209 0 0 1-.42.727l.7 1.326 3.14-2.616-.406-1.26-1.503 1.281v-4.118h-5.112v2.529c-.023 1.98-.4 3.24-1.256 4.165zm-2.383 1.434H45.9l.033-10.633c.398-.73.7-1.36.921-1.92l-1.326-.718c-.63 1.686-1.824 3.477-3.387 5.078l.716 1.35c.287-.283.58-.62.864-.945.148-.17.293-.336.43-.488l.324-.356v8.632zm3.1-9.815h6.252V7.954h-6.252v1.422zm10.385 5.88l.157.326c.69 1.438 1.49 2.71 2.173 3.462l1.021-1.513c-.848-.797-1.802-2.22-2.577-3.856l-.035-.072.028-.074c.933-2.48 1.394-5.08 1.495-8.426l.006-.181h.892v-1.48h-3.85l.037-.216c.103-.63.197-1.385.287-2.115l.083-.654-1.492-.269c-.38 3.61-1.052 6.595-2 8.879l-.226.542.917 1.215c.227-.435.463-.938.747-1.59l.231-.535.121.57a34.226 34.226 0 0 0 1.172 4.26l.025.07-.03.068c-.664 1.519-1.66 2.915-2.816 3.953l.918 1.244a13.677 13.677 0 0 0 2.543-3.291l.173-.316z" class="Fill_7"></path>
+	                 <path d="M70.607 7.514h10.26v-1.5h-10.26v1.5zm.031 3.127h10.259l-.003-1.505H70.651l-.013 1.505zm1.638 6.695h7.14v-3.46h-7.14v3.46zm-1.623 1.462h10.354v-6.446H70.653v6.446zM69.151 4.456H82.42v-1.58h-5.86L75.642.428l-1.617.44.806 2.008h-5.68v1.58zM65.797 19.19h1.657l.022-14.108c.649-1.237 1.184-2.6 1.68-4.276L67.532.044c-.997 3.495-2.366 6.137-4.18 8.064l.672 1.862c.118-.133.239-.268.362-.403.37-.41.753-.835 1.077-1.27l.334-.451V19.19z" class="Fill_9"></path>
+	                </g>
+	               <g transform="translate(21.378 22.44)" class="Group_14">
+	               <mask fill="#fff" class="mask_2">
+	                <use xlink:href="#svg_841fb010_a"></use>
+	               </mask>
+	               <use fill="#FB6500" xlink:href="#svg_841fb010_a" class="Clip_13"></use>
+	              </g>
+	              <g transform="translate(26.955 18.699)" class="Group_17">
+	               <mask fill="#fff" class="mask_4">
+	                <use xlink:href="#svg_841fb010_b"></use>
+	               </mask>
+	               <use fill="#0082EF" xlink:href="#svg_841fb010_b" class="Clip_16"></use>
+	              </g>
+	              <g transform="translate(23.237 14.021)" class="Group_20">
+	               <mask fill="#fff" class="mask_6">
+	                <use xlink:href="#svg_841fb010_c"></use>
+	               </mask>
+	               <use fill="#2DBC00" xlink:href="#svg_841fb010_c" class="Clip_19"></use>
+	              </g>
+	              <g transform="translate(17.66 16.828)" class="Group_23">
+	               <mask fill="#fff" class="mask_8">
+	                <use xlink:href="#svg_841fb010_d"></use>
+	               </mask>
+	               <use fill="#FC0" xlink:href="#svg_841fb010_d" class="Clip_22"></use>
+	              </g>
+	              <g transform="translate(0 .925)" fill="#0082F0" class="Group_28">
+	               <path d="M13.604.547c-.546 0-1.112.032-1.68.095-3.33.365-6.357 1.803-8.522 4.047a11.47 11.47 0 0 0-2.065 2.938 10.325 10.325 0 0 0-1.058 4.55c0 2.03.613 4.035 1.771 5.793.605.918 1.585 2.048 2.438 2.813l.047.042v.063l-.418 3.27c-.012.034-.025.067-.032.102-.008.03-.01.063-.012.096l-.008.059c-.002.014-.004.027-.004.041 0 .017.003.032.005.048l.006.045a.895.895 0 0 0 .886.813.878.878 0 0 0 .443-.123l.071-.042 3.908-1.98.053.015c.778.225 1.593.383 2.49.483a15.084 15.084 0 0 0 6.465-.685 2.035 2.035 0 0 1-1.041-1.768c-.734.223-1.487.38-2.242.466a13.232 13.232 0 0 1-2.937.009l-.186-.025-.11-.016a12.597 12.597 0 0 1-1.925-.407 1.17 1.17 0 0 0-.921.096.8.8 0 0 0-.075.038L6.485 22.89c-.252.147-.476-.012-.476-.242l.372-1.474.193-.74a.866.866 0 0 0-.305-.965 11.008 11.008 0 0 1-1.002-.85 9.906 9.906 0 0 1-1.42-1.695c-.945-1.435-1.444-3.063-1.444-4.708 0-1.279.29-2.52.86-3.692a9.461 9.461 0 0 1 1.702-2.42c1.822-1.887 4.38-3.098 7.204-3.407a12.831 12.831 0 0 1 2.936.006c2.81.323 5.354 1.54 7.161 3.426a9.44 9.44 0 0 1 1.694 2.425 8.367 8.367 0 0 1 .843 3.81c.7-.322 1.522-.21 2.114.29a10.325 10.325 0 0 0-1.029-4.99 11.46 11.46 0 0 0-2.055-2.946C21.685 2.476 18.676 1.031 15.36.65a15.44 15.44 0 0 0-1.755-.103" class="Fill_26"></path>
+	              </g>
+	             </g>
+	            </g>
+	           </g>
+	          </g>
+	         </g>
+	        </svg></a> 
+	       <a href="#">
+	        <svg width="56" height="30" viewbox="0 0 56 30" xmlns="http://www.w3.org/2000/svg">
+	         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="Symbols">
+	          <g transform="translate(-135)" fill="#0082F0" class="_________API">
+	           <g class="_________API">
+	            <path opacity=".5" d="M135 7h1v16h-1z" class="Rectangle_3"></path>
+	            <text font-family="PingFangSC-Regular, PingFang SC" font-size="21" font-weight="normal" letter-spacing="1" class="API">
+	             <tspan x="151" y="23">
+	              AP
+	             </tspan>
+	             <tspan x="180.279" y="23">
+	              I
+	             </tspan>
+	            </text>
+	           </g>
+	          </g>
+	         </g>
+	        </svg></a>
+	    </div> 
+			    <div class="frame_head_scene frame_sceneMenu js_ww_dropdownMenu">
+			        <a href="javascript:;" class="frame_head_scene_btn" @click="switchShow = !switchShow">企业内部开发</a> 
+			        <div class="qui_dropdownMenu ww_dropdownMenu" v-show="switchShow">
+				        <ul>
+				         	<li class="qui_dropdownMenu_item ww_dropdownMenu_item ww_dropdownMenu_item_Curr">
+				         		<a href="javascript:;" class="qui_dropdownMenu_itemLink ww_dropdownMenu_itemLink">
+				         			<span class="ww_commonImg"></span>
+				         			<span class="ww_dropdownMenu_itemLink_text">企业内部开发</span>
+				         		</a>
+				         	</li>
+				        	<li class="qui_dropdownMenu_item ww_dropdownMenu_item ww_dropdownMenu_item_Curr">
+				        		<a href="javascript:;" class="qui_dropdownMenu_itemLink ww_dropdownMenu_itemLink">
+				        			<span class="ww_commonImg"></span>
+				        			<span class="ww_dropdownMenu_itemLink_text">第三方应用开发</span>
+				        		</a>
+				        	</li>
+				         	<li class="qui_dropdownMenu_item ww_dropdownMenu_item ww_dropdownMenu_item_Curr">
+				         		<a href="javascript:;" class="qui_dropdownMenu_itemLink ww_dropdownMenu_itemLink">
+				         			<span class="ww_commonImg"></span>
+				         			<span class="ww_dropdownMenu_itemLink_text">智慧硬件开发</span>
+				         		</a>
+				         	</li>
+				        </ul>
+			        </div>
+			    </div> 
+	      		<div id="js_head_rightContent" class="apiHeader_rightContent">
+	       			<div class="frame_topMenu js_frame_topMenu">
+	        			<div class="frame_topMenu_wrap">
+	         				<div class="frame_topMenu_cnt">
+	          					<a href="javascript:;" ref="presentNav" :class="{frame_topMenu_btn_checked: activeNav === nav.id}" class="frame_topMenu_btn" v-for="(nav,index) in navs" @click="changeNav(index)">{{nav.nav}}</a>
+	         				</div> 
+	         				<div v-show="!searchShow" id="topNavLine" class="frame_topMenu_line" ref="scrollBottom"></div>
+	        			</div>
+	       			</div>
+	      		</div> 
+		      	<div class="apiHeader_rightWrap apiHeader_rightWrap_search">
+		       		<div class="apiHeader_login">
+		        		<a href="javascript:;" class="apiHeader_loginBtn">登录</a>
+		       		</div> 
+		       		<div class="apiHeader_searchWarp" :style="{width: searchShow ? '649px' : '30px'}">
+		        		<span class="apiHeader_searchIcon" @click="searchShow = true">
+			         		<svg width="14" height="14" viewbox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				          		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="Symbols">
+				           			<g fill="#787878" class="Icon_Element_12x12_Search_Copy_2">
+				            			<path d="M9.172 7.757l2.778 2.779-1.414 1.414-2.779-2.778a5 5 0 1 1 1.414-1.414zM5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" class="______12px"></path>
+				           			</g>
+				          		</g>
+			         		</svg>
+		         		</span>
+		         		<span v-show="searchShow" class="ww_commonImg ww_commonImg_DeleteItem ww_searchInput_delete" @click="searchShow = false"></span>
+		        		<input id="js_searchInput" placeholder="搜索企业内部开发文档内容" autocomplete="off" disableautocomplete="" type="text" :style="{width: searchShow ? '580px' : 0}"/>
+		       		</div>
+		      	</div> 
+	     	</div>
+	    </div> 
+	    <div class="frame_sidebar summary_cnt">
+	    	<ul class="summary js_summary">
+		        <li data-id="90663" class="chapter level_one_warp" :class="{open: list.show, close: !list.show}" v-for="list in lists">
+		        	<a href="javascript:;" @click.stop="list.show = !list.show">{{list.title}}</a> 
+		       		<ul class="level_two_warp" v-show="list.show">
+		        		<li data-id="90664" :class="{cate_selected: activeList === item.id}" v-for="item in list.describe">
+		        			<a href="javascript:;" class="level_two" @click="activeList = item.id">{{item.msg}}</a>
+		        			<ul v-if="item.detail && item.detail.length !== 0" class="level_three_warp">
+		        				<li data-id="90195" :class="{cate_selected: activeList === det.id}" v-for="det in item.detail">
+		        					<a href="javascript:;" class="level_three" @click="activeList = det.id">{{det.msg}}</a>
+		        				</li>
+		        			</ul>
+		        		</li>
+		       		</ul>
+		    	</li>
+	     	</ul>
+	     	<div class="frame_banner">
+	      		<span>注册成为企业微信服务商，为企业提供定制开发服务。</span> 
+	      		<a href="https://open.work.weixin.qq.com/wwopen/custom" target="_blank">了解更多</a>
+	     	</div>
+	    </div> 
+
+	    <div class="frame_cnt">
+	     <div id="js_doc_apiShow_cnt" class="frame_cnt_stage apiShow_cnt">
+	      <div class="apiShow_cnt_titleBar">
+	       <div class="apiShow_cnt_titleBar_text">
+	        <h1 id="js_doc_preview_title" class="apiShow_cnt_titleBar_title">开发前必读</h1>
+	       </div>
+	      </div> 
+	      <div id="js_doc_preview_content" class="markdown-body editormd-html-preview">
+	       <div class="markdown-toc editormd-markdown-toc">
+	        <ul class="markdown-toc-list">
+	         <li><a class="toc-level-2" href="#90000/90135/90664/开发文档阅读说明" level="2">开发文档阅读说明</a></li>
+	         <li><a class="toc-level-2" href="#90000/90135/90664/接口调用流程" level="2">接口调用流程</a></li>
+	         <li><a class="toc-level-2" href="#90000/90135/90664/基本调试方法" level="2">基本调试方法</a></li>
+	         <li><a class="toc-level-2" href="#90000/90135/90664/调用频率限制" level="2">调用频率限制</a>
+	          <ul></ul></li>
+	        </ul>
+	       </div>
+	       <h2 id="h2-u5F00u53D1u6587u6863u9605u8BFBu8BF4u660E"><a name="开发文档阅读说明" class="reference-link"></a><span class="header-link octicon octicon-link"></span>开发文档阅读说明</h2>
+	       <ol> 
+	        <li><p>服务端API开放了丰富的能力接口，开发者可以借助接口能力，实现企业服务及企业微信的集成。支持的能力，通过目录导航可以快速预览，目录树按功能块聚合归类，如通讯录管理、消息推送等。</p> </li>
+	        <li><p>文档的阅读次序，建议先阅读一遍开发指南，以及接口access_token获取。然后就可以独立查看各个功能块文档说明。</p> </li>
+	        <li><p>所有的接口需使用HTTPS协议、JSON数据格式、<strong>UTF8编码</strong>。接口说明格式如下：</p> <pre class="prettyprint linenums prettyprinted" style="position:relative;">
+	          <ol class="linenums">
+	           <li class="L0"><code><span class="pun">请求方式：</span><span class="pln">GET</span><span class="pun">/</span><span class="pln">POST</span><span class="pun">（</span><span class="pln">HTTPS</span><span class="pun">）</span></code></li>
+	           <li class="L1"><code><span class="pun">请求地址：</span><span class="pln">https</span><span class="pun">:</span><span class="com">//qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ID&amp;corpsecret=SECRET</span></code></li>
+	           <li class="L2"><code><span class="pun">请求包体：</span></code></li>
+	           <li class="L3"><code><span class="pun">...</span></code></li>
+	           <li class="L4"><code><span class="pun">参数说明：</span></code></li>
+	           <li class="L5"><code><span class="pun">...</span></code></li>
+	           <li class="L6"><code><span class="pun">权限说明：</span></code></li>
+	           <li class="L7"><code><span class="pun">...</span></code></li>
+	           <li class="L8"><code><span class="pun">返回结果：</span></code></li>
+	           <li class="L9"><code><span class="pun">...</span></code></li>
+	           <li class="L0"><code><span class="pun">参数说明：</span></code></li>
+	           <li class="L1"><code><span class="pun">...</span></code></li>
+	          </ol>
+	          <div class="apiFeature_copy_btn"></div>
+	          <div class="ww_popPanel apiFeature_copy_btnTips js_copy_btnTips">
+	           点击复制
+	          </div></pre><p>1) <strong>请求方式</strong>，标明接口调用的HTTP方法，区分HttpGet/HttpPost请求。所有的请求都为https协议。<br />2) <strong>请求地址</strong>，参数中标注<strong>大写的单词</strong>，表示为需要<strong>替换的变量</strong>。在上面的例子中 ID 及 SECRET 为需要替换的变量，根据实际获取值更新。假如，这里我们获取到的ID=wxdd725338566d6ffe，SECRET=vQT_03RsfVA3uE6J5dofR7hJeOdiXUvccqV8mDgLdLI，那么上述的请求在发送时为：</p> <pre class="prettyprint linenums prettyprinted" style="position:relative;">
+	          <ol class="linenums">
+	           <li class="L0"><code><span class="pln">https</span><span class="pun">:</span><span class="com">//qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=wxdd725338566d6ffe&amp;corpsecret=vQT_03RsfVA3uE6J5dofR7hJeOdiXUvccqV8mDgLdLI</span></code></li>
+	          </ol>
+	          <div class="apiFeature_copy_btn"></div>
+	          <div class="ww_popPanel apiFeature_copy_btnTips js_copy_btnTips">
+	           点击复制
+	          </div></pre><p>3) <strong>请求包体/参数说明</strong>，标明请求参数示例及说明，参数说明包括字段含义、取值范围，开发者在设计数据结构时，应参考该定义范围。<br />4) <strong>权限说明</strong>，标明接口的使用范围，开发者应特别<strong>留意调用场景</strong>。比如，同步通讯录的接口必须要用通讯录同步助手的access_token，发送消息指定的范围必须是应用可见范围内的结点等。<br />5) <strong>返回结果/参数说明</strong>，标明返回参数示例及说明。特别留意，所有接口返回包里都有errcode、errmsg。开发者需<strong>根据errcode是否为0判断是否调用成功</strong>（errcode意义请见<a href="#10649">全局错误码</a>）。而errmsg仅作参考，后续可能会有变动，因此不可作为是否调用成功的判据。</p> </li>
+	       </ol> 
+	       <h2 id="h2-u63A5u53E3u8C03u7528u6D41u7A0B"><a name="接口调用流程" class="reference-link"></a><span class="header-link octicon octicon-link"></span>接口调用流程</h2>
+	       <center>
+	        <br />
+	        <img src="http://p.qpic.cn/pic_wework/3138313977/8187638d87c642e4dfdc5be2382183d41f1bc5e446580dbc/0" alt="" />
+	        <br />
+	       </center> 
+	       <ol> 
+	        <li>获取access_token，参考 <a href="#15074">文档说明</a>。</li>
+	        <li>缓存和刷新access_token。<br />开发者需要缓存access_token，用于后续接口的调用（注意：不能频繁调用gettoken接口，否则会受到频率拦截）。当access_token失效或过期时，需要重新获取。</li>
+	        <li>调用具体的业务接口</li>
+	       </ol> 
+	       <h2 id="h2-u57FAu672Cu8C03u8BD5u65B9u6CD5"><a name="基本调试方法" class="reference-link"></a><span class="header-link octicon octicon-link"></span>基本调试方法</h2>
+	       <p>企业微信提供了开发者工具，可以借助工具排查问题原因。参考说明：工具与资源 - <a href="#12222">开发者工具</a></p> 
+	       <h2 id="h2-u8C03u7528u9891u7387u9650u5236"><a name="调用频率限制" class="reference-link"></a><span class="header-link octicon octicon-link"></span>调用频率限制</h2>
+	       <p>出于系统保护的考虑，我们对接口的调用做了频率限制。参考说明：附录 - <a href="#10785">主动调用频率限制</a></p> 
+	      </div> 
+	      <div class="frame_cnt_foot"> 
+	       <div id="js_content_footer_nav" class="frame_cnt_foot_pageNav">
+	        
+	        <div class="frame_cnt_foot_pageNav_Right">
+	         <a href="javascript:;" class="frame_cnt_foot_pageNav_link">下一篇</a> 
+	         <div class="frame_cnt_foot_pageNav_text">
+	          基本概念介绍
+	         </div>
+	        </div>
+	       </div> 
+	       <div class="frame_cnt_foot_inside">
+	        <div class="frame_cnt_foot_info">
+	         <nav class="frame_cnt_foot_nav">
+	          <div class="frame_cnt_foot_nav_item">
+	           <a href="http://www.tencent.com/" target="_blank" class="frame_cnt_foot_nav_item_link">关于腾讯</a>
+	          </div> 
+	          <div class="frame_cnt_foot_nav_item">
+	           <span class="frame_cnt_foot_nav_item_dep">|</span> 
+	           <a href="https://work.weixin.qq.com/eula" target="_blank" class="frame_cnt_foot_nav_item_link">用户协议</a>
+	          </div> 
+	          <div class="frame_cnt_foot_nav_item">
+	           <span class="frame_cnt_foot_nav_item_dep">|</span> 
+	           <a href="https://work.weixin.qq.com/help" target="_blank" class="frame_cnt_foot_nav_item_link">帮助中心</a>
+	          </div>
+	         </nav>
+	         <span class="frame_cnt_foot_copyright">&copy; 1998&nbsp;-&nbsp;2018&nbsp;Tencent Inc. All Rights Reserved</span>
+	        </div>
+	       </div>
+	      </div>
+	     </div>
+	    </div> 
+	   </div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	var app = new Vue({
+	  el: '#frame',
+	  data: {
+	  	searchShow: false,
+	  	switchShow: false,
+	  	activeNav: '',
+	  	activeList: '',
+	    lists: [
+	    	{
+	    		show: false,
+	    		title: '开发指南',
+	    		describe: [
+	    			{
+	    				id: 1,
+	    				msg: '开发前必读'
+	    			},
+	    			{
+	    				id: 2,
+	    				msg: '基本概念介绍'
+	    			},
+	    			{
+	    				id: 3,
+	    				msg: '获取access_token'
+	    			},
+	    			{
+	    				id: 4,
+	    				msg: '回调配置'
+	    			}
+	    		]
+	    	},
+	    	{
+	    		show: false,
+	    		title: '开发指南',
+	    		describe: [
+	    			{
+	    				id: 5,
+	    				msg: '开发前必读'
+	    			},
+	    			{
+	    				id: 6,
+	    				msg: '基本概念介绍'
+	    			},
+	    			{
+	    				id: 7,
+	    				msg: '获取access_token'
+	    			},
+	    			{
+	    				id: 8,
+	    				msg: '回调配置'
+	    			}
+	    		]
+	    	},
+	    	{
+	    		show: false,
+	    		title: '开发指南',
+	    		describe: [
+	    			{
+	    				id: 9,
+	    				msg: '开发前必读'
+	    			},
+	    			{
+	    				id: 10,
+	    				msg: '基本概念介绍'
+	    			},
+	    			{
+	    				id: 11,
+	    				msg: '获取access_token'
+	    			},
+	    			{
+	    				id: 12,
+	    				msg: '回调配置'
+	    			}
+	    		]
+	    	},
+	    	{
+	    		show: false,
+	    		title: '开发指南',
+	    		describe: [
+	    			{
+	    				id: 13,
+	    				msg: '基本概念介绍',
+	    				detail: [
+	    					{
+	    						id: 17,
+	    						msg: '基本概念介绍1111'
+	    					},
+	    					{
+	    						id: 18,
+	    						msg: '基本概念介绍2222'
+	    					},
+	    					{
+	    						id: 19,
+	    						msg: '基本概念介绍3333'
+	    					}
+	    				]
+	    			},
+	    			{
+	    				id: 14,
+	    				msg: '基本概念介绍'
+	    			},
+	    			{
+	    				id: 15,
+	    				msg: '获取access_token'
+	    			},
+	    			{
+	    				id: 16,
+	    				msg: '回调配置'
+	    			}
+	    		]
+	    	}
+	    ],
+	    navs: [
+	    	{
+	    		id: 1,
+	    		nav: '快速入门'
+	    	},
+	    	{
+	    		id: 2,
+	    		nav: '服务端API'
+	    	},
+	    	{
+	    		id: 3,
+	    		nav: '客户端API'
+	    	},
+	    	{
+	    		id: 4,
+	    		nav: '工具与资源'
+	    	},
+	    	{
+	    		id: 5,
+	    		nav: '附录'
+	    	},
+	    	{
+	    		id: 6,
+	    		nav: '联系我们'
+	    	}
+	    ]
+	  },
+	  methods: {
+	  	changeNav(index) {
+	  		this.activeNav = this.navs[index].id
+	  		this.$refs.scrollBottom.style.width = this.$refs.presentNav[index].clientWidth + "px"
+	  		let translateWidth = 0;
+	  		for(let i = 0; i < index; i++) {
+	  			translateWidth += this.$refs.presentNav[i].clientWidth + 30
+	  		}
+	  		this.$refs.scrollBottom.style.transform = "translate3d("+translateWidth+"px,0,0)"; 
+	  	}
+	  },
+	  created() {
+	  	this.activeList = this.lists[0].describe[0].id
+	  	this.activeNav = this.navs[0].id
+	  },
+	  mounted() {
+	  	this.$refs.scrollBottom.style.width = this.$refs.presentNav[0].clientWidth + "px"
+	  }
+	})
+</script>
+</html>
